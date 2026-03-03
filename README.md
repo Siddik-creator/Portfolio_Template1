@@ -152,7 +152,6 @@ This project is for personal use. All rights reserved © 2024 Abubakkarsiddik Ma
 ## 📬 Contact
 
 - **Email**: siddikmatwal@gmail.com
-- **Phone**: +91 9420048620
 - **LinkedIn**: [abubakkarsiddik-matwal](https://www.linkedin.com/in/abubakkarsiddik-matwal-40511931b)
 - **GitHub**: [Siddik-creator](https://github.com/Siddik-creator)
 

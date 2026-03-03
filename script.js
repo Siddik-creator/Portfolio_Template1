@@ -1,4 +1,4 @@
-// ==================== Smooth Scrolling ====================
+//  Smooth Scrolling 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -12,7 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ==================== Mobile Menu Toggle ====================
+//  Mobile Menu Toggle 
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -29,7 +29,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// ==================== Navbar Scroll Effect ====================
+//  Navbar Scroll Effect 
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
@@ -40,7 +40,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ==================== Scroll Animations ====================
+//  Scroll Animations 
 const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -73,7 +73,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// ==================== Skill Progress Animation ====================
+//  Skill Progress Animation 
 const skillBars = document.querySelectorAll('.progress-bar');
 
 const skillObserver = new IntersectionObserver((entries) => {
@@ -92,7 +92,7 @@ skillBars.forEach(bar => {
     skillObserver.observe(bar);
 });
 
-// ==================== Project Card Hover Effect ====================
+//  Project Card Hover Effect 
 const projectCards = document.querySelectorAll('.project-card');
 
 projectCards.forEach(card => {
@@ -105,7 +105,7 @@ projectCards.forEach(card => {
     });
 });
 
-// ==================== Form Submission ====================
+//  Form Submission 
 const contactForm = document.querySelector('.contact-form');
 
 contactForm.addEventListener('submit', (e) => {
@@ -117,14 +117,12 @@ contactForm.addEventListener('submit', (e) => {
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
     
-    // Show success message (in real scenario, you'd send to a server)
     alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon.`);
     
-    // Reset form
     contactForm.reset();
 });
 
-// ==================== Active Navigation Link ====================
+//  Active Navigation Link 
 const sections = document.querySelectorAll('section');
 const navLinksItems = document.querySelectorAll('.nav-links a');
 
@@ -148,7 +146,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// ==================== Smooth Scroll to Section on Load ====================
+//  Smooth Scroll to Section on Load 
 window.addEventListener('load', () => {
     // If there's a hash in URL, scroll to that section
     if (window.location.hash) {
@@ -164,7 +162,7 @@ window.addEventListener('load', () => {
     }
 });
 
-// ==================== Button Ripple Effect ====================
+//  Button Ripple Effect 
 const buttons = document.querySelectorAll('.btn');
 
 buttons.forEach(button => {
@@ -206,7 +204,7 @@ rippleStyle.textContent = `
 `;
 document.head.appendChild(rippleStyle);
 
-// ==================== Typing Effect for Hero ====================
+//  Typing Effect for Hero 
 const heroText = document.querySelector('.hero-text p:nth-child(2)');
 const text = heroText.textContent;
 heroText.textContent = '';
@@ -223,7 +221,7 @@ function typeWriter() {
 // Start typing effect after page load
 setTimeout(typeWriter, 1000);
 
-// ==================== Parallax Effect (Subtle) ====================
+//  Parallax Effect (Subtle) 
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
     const hero = document.querySelector('.hero');
@@ -232,7 +230,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ==================== Lazy Loading Images (Placeholder) ====================
+//  Lazy Loading Images (Placeholder) 
 const images = document.querySelectorAll('img[data-src]');
 
 const imgObserver = new IntersectionObserver((entries) => {
